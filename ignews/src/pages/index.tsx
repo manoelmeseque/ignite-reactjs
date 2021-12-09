@@ -1,13 +1,15 @@
 import Head from 'next/head'
 
+import styles from './home.module.scss'
+
 export default function Home() {
   return (
     <>
       <Head>
         <title>Home | ig.news</title>
       </Head>
-      <main>
-        <section>
+      <main className={styles.contentContainer}>
+        <section className={styles.hero}>
           <span>👏 Hey, welcome</span>
           <h1>News about the <span>React</span> world</h1>
           <p>
